@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button id="bat" onclick="On()">On</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px" />
+    <script language="Javascript">
+        function On() {
+            if (document.getElementById('bat').innerHTML == "ON") {
+                document.getElementById('myImage').src = 'pic_bulbon.gif';
+                document.getElementById('bat').innerHTML = "off";
+            }
+            else
+            {
+                document.getElementById('myImage').src = 'pic_bulboff.gif';
+                document.getElementById('bat').innerHTML = "ON";
+            }
+        }
+    </script>
+</body>
+</html>
